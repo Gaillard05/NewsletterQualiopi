@@ -1,0 +1,276 @@
+/* Mise à 0 des marges pour l'ensemble de la page */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: rgba(128, 128, 128, 0.63);
+}
+#conteneur{
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+header{
+    text-align: center;
+    margin-top: 10%;
+}
+h1{
+    background-color: #80B4F9;
+    color: #fcfdfe;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+.intitule{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+.descriptif{
+    width: 400px;
+    margin-left: 5%;
+}
+.descriptif>p{
+    width: 80%;
+}
+img[alt="logo"]{
+    width: 50%;
+    margin-bottom: 5%;
+}
+.contenu_img>img{
+    width: 400px;
+}
+img[alt="logoQualiopi"]{
+    width: 100%;
+}
+.text-qualiopi{
+    padding-top: 5px;
+}
+p{
+    text-align: left;
+    font-family: 'Relay', sans-serif;
+    color: #29438B;
+    font-size: medium;
+    white-space: normal;
+}
+p>span{
+    color: #164892;
+    font-weight: bolder;
+}
+.contenus_right, .contenus_left{
+    width: 100%;
+}
+.contenus_right{
+    display: flex;
+}
+.contenus_left{
+    display: flex;
+    margin-right: 10%;
+}
+.contenus_president,.contenus_directrice{
+    display: flex;
+    margin-bottom: 5%;
+}
+.article_president, .article_directrice{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+    background-color: #80B4F9; 
+}
+.article_president{
+    margin-bottom: 5%;
+}
+h2{
+    color: #fcfdfe;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif; 
+    text-align: left;
+    margin: 1%;
+}
+.temoignage, .temoignage_president, .temoignage_directrice{
+    color: #fcfdfe;
+    padding: 1%;
+    margin: 10%;
+}
+.temoignage_president, .temoignage_directrice{
+    padding: 8%;
+}
+.photo_president, .photo_directrice{
+    width: 100%;
+    position: relative;
+}
+.photo_president>img, .photo_directrice>img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    transform: translate(0, -50%);
+}
+.photo_directrice>img{
+    left: -50%;
+}
+.bouton_president, .bouton_directrice, .bouton_coordinateur{
+    font-family: 'Relay', sans-serif;
+    background-color: #29438b;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #FFFFFF;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.conteneur_bouton{
+    position: relative;
+}
+.bouton_president{
+    position: absolute;
+    left:5%;
+}
+.bouton_directrice{
+    position: absolute;
+    right:5%;
+}
+.contenu_temoignage{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.article_temoignage{
+    background-color: #80B4F9; 
+    padding: 3%;
+}
+.contenu_temoignage>p{
+    margin: 5%;
+}
+.contenu_temoignage>h2{
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+img[alt="groupe"]{
+    width: 100%;
+}
+.autre_temoignage{
+    display: flex;
+    margin-bottom: 5%;
+}
+.conseiller, .encadrant{
+    font-weight: bolder;
+    font-family: 'Quicksand', sans-serif;
+    color: #82B5F9;
+}
+.temoignage_Regis, .temoignage_Christian{
+    width: 40%;
+    margin: 0 auto;
+}
+.temoignage_Regis>p, .temoignage_Christian>p{
+    margin: 5%;
+    color: #82B5F9;
+}
+hr{
+   border-color: #80B5F9;
+}
+.contact{
+    font-family: 'Relay', sans-serif;
+    margin-bottom: 5%;
+}
+.contact>a{
+    text-decoration: none;
+}
+.contact>a>p{
+    text-align: center;
+}
+.bouton_coordinateur{
+    position: absolute;
+    right:5%;
+}
+footer{
+    background-color: #29438b;
+    display: flex;
+    justify-content: center;
+}
+.reseau{
+    width: 80px;
+    margin-top: 1%;
+}
+
+@media screen and (max-width:650px) {
+    #conteneur{
+        min-width: 320px;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: medium;
+    }
+    .contenu_img>img{
+        width: 100%;
+    }
+    img[alt="logoQualiopi"] {
+        width: 50%;
+    }
+    .intitule{
+        flex-direction: column;
+        align-content: center;
+        margin-bottom: 10%;
+    }
+    .descriptif{
+        margin: 0 auto;
+        margin-left: 10%;
+    }
+    .contenus_president, .contenus_directrice{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contenus_president, .contenus_directrice{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contenus_directrice{
+        flex-direction: column-reverse;
+    }
+    .contenus_right, .contenus_left {
+        width: 70%;
+        margin-bottom: 10%;
+        margin: 0 auto;
+    }
+    .contenus_left{
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    .photo_president>img, .photo_directrice>img{
+        position: relative;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+    .bouton_president{
+        left: 25%;
+        top: -1.5rem;
+    }
+    .bouton_directrice{
+        left: 25%;
+        top: -1.5rem;
+    }
+    .contenu_temoignage{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+    .bouton_coordinateur{
+        left: 25%;
+        top: -1.5rem;
+    }
+    .autre_temoignage{
+        margin-top: 12%;
+        width: 100%;
+    }
+    .temoignage_Regis, .temoignage_Christian{
+        margin: 0 auto;
+    }
+}
